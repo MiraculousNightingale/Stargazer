@@ -1,15 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: wenceslaus
- * Date: 3/30/18
- * Time: 8:52 AM
- */
-?>
-
-<?php
-
 require 'src/common/general.php';
 
 if (isset($_POST['entry-btn'])) {
@@ -17,16 +7,12 @@ if (isset($_POST['entry-btn'])) {
     $username = mysqli_real_escape_string($db, $_POST['login_field']);
     $password = mysqli_real_escape_string($db, $_POST['password_field']);
 
-    $query = "SELECT * FROM user WHERE username = '$username' and password = '$password'";
+    $query = "SELECT * FROM `user` WHERE username = '$username' AND password = '$password'";
     $result = mysqli_query($db, $query);
     $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
-//    Can be used too:
-//    $db->query($query);
-//    $result->fetch_assoc();
 
     // If result matched $myusername and $mypassword, table row must be 1 row
-
     if (mysqli_num_rows($result) == 1) {
         $_SESSION['username'] = $username;
         $_SESSION['password'] = $password;
@@ -37,21 +23,9 @@ if (isset($_POST['entry-btn'])) {
         $_SESSION['role'] = $row['role'];
 
         $_SESSION['logged_in'] = true;
-        header("location: index.php");
-    } else {
-        write_log("Your Login Name or Password is invalid");
+        header('location: index.php');
     }
-
 }
-
-write_log("Currently active sessions: " . count(glob(session_save_path() . '/*')));
-write_log("User: " . $_SESSION['username']);
-write_log("Pass: " . $_SESSION['password']);
-
-if ($_SESSION['account-created']) {
-    write_log("New Account Created.");
-};
-
 ?>
 
 <html lang="en">
@@ -66,12 +40,11 @@ if ($_SESSION['account-created']) {
 <body>
 
 <div class="log-box">
-    <?php echo $log; ?>
 </div>
 <div class="content-holder">
     <div class="stargazer-hdr">StarGazer</div>
     <div class="signin-holder clearfix">
-        <form method="post">
+        <form method="post" >
             <h1>Welcome, please Sign In.</h1>
             <div class="inputs_box">
                 <input name="login_field" type="text" placeholder="Username" class="signin-input">

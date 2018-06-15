@@ -6,7 +6,7 @@
  * Time: 9:09 PM
  */
 
-require '../general.php';
+require 'common/general.php';
 
 if ($_SESSION['role'] != 'admin') {
     header('location: index.php');

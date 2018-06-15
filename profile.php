@@ -11,15 +11,6 @@
 
 require 'src/common/general.php';
 
-write_log("Currently active sessions: " . count(glob(session_save_path() . '/*')));
-write_log("User: " . $_SESSION['username']);
-write_log("Pass: " . $_SESSION['password']);
-
-//    Changes Saved Check
-if ($_SESSION['changes_saved']) {
-    write_log("Changes saved.");
-}
-
 if (isset($_POST['save-changes'])) {
 
 //    Save Changes
@@ -33,11 +24,12 @@ if (isset($_POST['save-changes'])) {
     $query_change_params = "UPDATE `user` SET `password` = '$password', `email` = '$email', `planet` = '$planet', 
     `country` = '$country', `street` = '$street' WHERE `user` . `username` = '$username';";
 
-    $db->query($query_change_params);
+    mysqli_query($db, $query_change_params);
 
 //    Update Session Data
     $query_select_current_user = "SELECT * FROM user WHERE username = '$username';";
-    $row = $db->query($query_select_current_user)->fetch_assoc();
+    $result = mysqli_query($db, $query_select_current_user);
+    $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
     $_SESSION['password'] = $row['password'];
     $_SESSION['email'] = $row['email'];
     $_SESSION['planet'] = $row['planet'];
@@ -47,23 +39,19 @@ if (isset($_POST['save-changes'])) {
     $_SESSION['changes_saved'] = true;
 }
 
-if($_SESSION['role']=='admin'){
-    $control_news_button="<a class='info-form-btn' href='feed_editor.php'>Feed Editor</a>";
+if ($_SESSION['role'] == 'admin') {
+    $control_news_button = "<a class='info-form-btn' href='feed_editor.php'>Feed Editor</a>";
 }
 ?>
 
 <html lang="en">
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
-<link rel="stylesheet" type="text/css" href="css/logbox.css">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-<div class="log-box">
-    <?php echo $log ?>
-</div>
 
 <div class="info-holder">
     <form method="post" class="info-form">
