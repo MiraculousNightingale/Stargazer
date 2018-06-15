@@ -26,17 +26,19 @@ require 'src/index_action.php';
         <?php echo $state_button; ?>
     </ul>
 </header>
-<div class="menu-summoner">
-    <div class="left-menu">
-        <span>Welcome to Stargazer</span>
-        <ul class="tab-list">
-            <li><a id="tab1" data="src/ajax/tab.php/?tab=info">About Us</a></li>
-            <li><a id="tab4" data="src/ajax/tab.php/?tab=news">News Feed</a></li>
-            <li><a id="tab2" data="src/ajax/tab.php/?tab=gaze">Gaze'Em</a></li>
-            <li><a id="tab3" data="star_map.php">Star Map</a></li>
-        </ul>
+    <div class="menu">
+    <!--    <div class="left-menu">-->
+    <!--        <span>Welcome</span>-->
+    <div class="leftRighter" id="leftRighter"></div>
+            <ul class="tab-list menu-summoner" id='menu'>
+                <li><a id="tab1" data="src/ajax/tab.php/?tab=info">About Us</a></li>
+                <li><a id="tab4" data="src/ajax/tab.php/?tab=news">News Feed</a></li>
+                <li><a id="tab2" data="src/ajax/tab.php/?tab=gaze">Gaze'Em</a></li>
+                <li><a id="tab3" data="star_map.php">Star Map</a></li>
+            </ul>
+    <!--    </div>-->
     </div>
-</div>
+
 <div class="page-wrap">
 </div>
 <div class="general-container">

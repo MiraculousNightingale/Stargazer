@@ -65,11 +65,12 @@ if (isset($_GET['tab'])) {
                     $text = $data['text'];
                     $img = "uploads/" . $data['image'];
                     $date = $data['date'];
+//                    <img src='$img'>
                     echo "
                     <div class='news-block'>
                         <h6 class='news-header'>$header</h6>
-                        <div class='news-content'>
-                            <img src='$img'>
+                        <div class='news-content'>                         
+                            <div class='img' style='background:url('$img');'></div>
                             <article>
                             $text
                             </article>

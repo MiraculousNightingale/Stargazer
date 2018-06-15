@@ -27,6 +27,17 @@ function tabLoad(entryURL) {
     });
 }
 
+$("#leftRighter").click(function(){
+//    alert('Hello !');
+    if($('#menu').css('display')=='none'){
+        $('#leftRighter').css('transform','rotate(0deg)');
+//        $('#menu').css('display','flex');
+        $('#menu').show();
+    }else{
+        $('#menu').hide();
+        $('#leftRighter').css('transform','rotate(180deg)');
+    }
+});
 
 // $.ajax({
 //     type:"POST",
