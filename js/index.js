@@ -6,7 +6,7 @@
 //         }
 //     };
 //     // xhttp.open("GET", "ajax_info.txt", true);
-//     xhttp.open("GET","source/info.html",true);
+//     xhttp.open("GET","src/info.html",true);
 //     xhttp.send();
 // }
 

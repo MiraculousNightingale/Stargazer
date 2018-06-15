@@ -9,7 +9,7 @@
 
 <?php
 
-require 'source/general.php';
+require 'src/common/general.php';
 
 write_log("Currently active sessions: " . count(glob(session_save_path() . '/*')));
 write_log("User: " . $_SESSION['username']);
@@ -53,9 +53,9 @@ if($_SESSION['role']=='admin'){
 ?>
 
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
-<link rel="stylesheet" type="text/css" href="stylesheets/main_style.css">
-<link rel="stylesheet" type="text/css" href="stylesheets/logbox.css">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/logbox.css">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>

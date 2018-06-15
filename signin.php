@@ -10,7 +10,7 @@
 
 <?php
 
-require 'source/general.php';
+require 'src/common/general.php';
 
 if (isset($_POST['entry-btn'])) {
 
@@ -55,9 +55,9 @@ if ($_SESSION['account-created']) {
 ?>
 
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
-<link rel="stylesheet" type="text/css" href="stylesheets/signin_style.css">
-<link rel="stylesheet" type="text/css" href="stylesheets/logbox.css">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/signin.css">
+<link rel="stylesheet" type="text/css" href="css/logbox.css">
 <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
 <head>
     <meta charset="UTF-8">
