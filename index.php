@@ -8,7 +8,7 @@
 ?>
 <?php
 
-require_once 'src/index_action.php';
+require 'src/index_action.php';
 
 ?>
 

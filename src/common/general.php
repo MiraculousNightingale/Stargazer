@@ -13,16 +13,8 @@ function if_session_starter()
     }
 }
 
-<<<<<<< HEAD:source/general.php
-function getLink($id,$href,$text){
-    if($id=='login-btn'){
-        return "<li id='$id'><a href='$href'>$text</a></li>";
-
-    }
-=======
 function getLink($id, $href, $text)
 {
->>>>>>> f395c2570295448d6d2152228487c08035f5b650:src/common/general.php
     return "<li id='$id'><a href='$href'>$text</a></li>";
 }
 

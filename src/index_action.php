@@ -1,6 +1,6 @@
 <?php
 
-require_once 'common/general.php';
+require 'common/general.php';
 //Session starts
 
 $profile_button = '';
