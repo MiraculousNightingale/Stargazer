@@ -6,6 +6,7 @@
  * Time: 2:03 AM
  */
 
+require '../common/db_config.php';
 
 if (isset($_GET['tab'])) {
 
@@ -14,7 +15,6 @@ if (isset($_GET['tab'])) {
             echo file_get_contents('info.html');
             break;
         case 'gaze':
-            require 'db_gazer_connect.php';
 
             $db = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, 'stargazer_db');
             $select_all_query = mysqli_query($db, "SELECT * FROM spacecraft");
@@ -48,7 +48,6 @@ if (isset($_GET['tab'])) {
             }
             break;
         case 'news':
-            require 'db_connect.php';
 
             $select_all_query = mysqli_query($db, "SELECT * FROM news");
             if (mysqli_num_rows($select_all_query) > 0) {

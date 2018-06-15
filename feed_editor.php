@@ -9,7 +9,7 @@
 
 <?php
 
-require 'source/feed_action.php';
+require 'src/feed_action.php';
 
 
 ?>
@@ -61,14 +61,14 @@ require 'source/feed_action.php';
 </body>
 </html>
 
-<link rel="stylesheet" href="stylesheets/reset.css">
-<link rel="stylesheet" href="stylesheets/index.css">
-<link rel="stylesheet" type="text/css" href="stylesheets/logbox.css">
-<link rel="stylesheet" href="stylesheets/about_info.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/logbox.css">
+<link rel="stylesheet" href="css/about_info.css">
 <link rel="stylesheet" href="lib/jquery-ui.min.css">
-<link rel="stylesheet" href="stylesheets/table.css">
-<link rel="stylesheet" href="stylesheets/starmap_style.css">
-<link rel="stylesheet" href="stylesheets/feed_editor.css">
+<link rel="stylesheet" href="css/table.css">
+<link rel="stylesheet" href="css/starmap.css">
+<link rel="stylesheet" href="css/feed_editor.css">
 
 <script src="lib/jquery-3.3.1.min.js"></script>
 <script src="lib/jquery-ui.min.js"></script>

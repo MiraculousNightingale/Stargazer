@@ -6,7 +6,7 @@
  * Time: 9:09 PM
  */
 
-require 'general.php';
+require '../general.php';
 
 if ($_SESSION['role'] != 'admin') {
     header('location: index.php');
@@ -19,7 +19,7 @@ if ($_SESSION['logged_in'] == false) {
     $state_button = getLink('login-btn', 'signin.php', 'Log In');
 } else {
     $profile_button = getLink('user-profile-btn', 'profile.php', 'User Profile');
-    $state_button = getLink('login-btn', 'logout_redirect.php', 'Log Out');
+    $state_button = getLink('login-btn', 'logout.php', 'Log Out');
 }
 
 function getImage()

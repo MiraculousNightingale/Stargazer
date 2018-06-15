@@ -9,7 +9,7 @@
 
 <?php
 
-require 'source/general.php';
+require 'src/common/general.php';
 
 if (isset($_POST['signup'])) {
     if ($_POST['username-field'] != null && $_POST['password-field'] != null) {
@@ -41,9 +41,9 @@ if (isset($_POST['signup'])) {
 ?>
 
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
-<link rel="stylesheet" type="text/css" href="stylesheets/signup_style.css">
-<link rel="stylesheet" type="text/css" href="stylesheets/logbox.css">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/signup.css">
+<link rel="stylesheet" type="text/css" href="css/logbox.css">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>

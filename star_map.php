@@ -7,7 +7,7 @@
  */
 ?>
 <?php
-require 'source/general.php';
+require 'src/common/general.php';
 ?>
 <!--<html lang="en">-->
 <!--<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">-->
