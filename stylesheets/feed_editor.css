@@ -1,0 +1,75 @@
+.feed-form {
+    display: block;
+    margin: auto;
+}
+
+.feed-form span {
+    display: block;
+    margin: 10px auto;
+}
+
+.submit-form-btn {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    padding: 15px 60px;
+    font-size: 20px;
+    line-height: 20px;
+    color: white;
+    border: none;
+    background: #2b2b2b;
+    transition: 0.4s;
+}
+
+.submit-form-btn:hover {
+    box-shadow: 0 0 5px 1px #000000;
+    background: #6784ca;
+    transition: 0.4s;
+}
+
+.article-picture{
+    display: block;
+    height: 280px;
+    width: 300px;
+    margin: 5px auto;
+    box-shadow: 0 0 5px 1px #000000;
+}
+.article-header-field{
+    font-weight: 800;
+    font-size: 18px;
+    width: 500px;
+    text-align: center;
+}
+.article-text-field{
+    overflow: auto;
+    height: 300px;
+    width: 600px;
+    font-size: 14px;
+}
+.picture-part{
+    display: inline-block;
+    margin: 10px;
+}
+.text-part{
+    display: inline-block;
+    margin: 10px;
+}
+.content-editor{
+    display: block;
+    margin: 10px auto;
+}
+.general-container{
+    display:block;
+    text-align: center;
+}
+.main-container{
+    display:block;
+    margin: auto;
+}
+body{
+    font-family: Arial, sans-serif;
+}
+h1{
+    font-weight: 800;
+    font-size: 24px;
+}

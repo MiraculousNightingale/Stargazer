@@ -1,0 +1,15 @@
+.log-box {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.log-box:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
