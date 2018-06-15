@@ -15,7 +15,7 @@ function if_session_starter()
 
 function getLink($id,$href,$text){
     if($id=='login-btn'){
-        return "<li id='$id' style='right:0; position: absolute;'><a href='$href'>$text</a></li>";
+        return "<li id='$id'><a href='$href'>$text</a></li>";
 
     }
     return "<li id='$id'><a href='$href'>$text</a></li>";

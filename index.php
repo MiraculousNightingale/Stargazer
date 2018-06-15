@@ -20,7 +20,7 @@ require 'source/index_action.php';
 </head>
 <body>
 <header>
-    <ul class="header-menu clearfix">
+    <ul class="header-menu">
         <li><a href="index.php">Home</a></li>
         <?php echo $profile_button; ?>
         <?php echo $state_button; ?>

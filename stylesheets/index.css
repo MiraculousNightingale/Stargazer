@@ -1,11 +1,25 @@
+html{
+    position: relative;
+    width: 80vw;
+    margin: auto;
+/*    background: black;*/
+}
+
 body {
+    width: 100%;
+    position: relative;
     font-family: Arial, sans-serif;
     text-shadow: 0 0 0 green;
 }
 
+header {
+    width: 80vw;
+    position: fixed;
+    top: 0;
+}
 .left-menu {
-    display: block;
     margin: auto;
+    display: block;
     text-align: center;
     font-size: 34px;
     background: white;
@@ -19,14 +33,14 @@ body {
     z-index: 1;
     display: flex;
     flex-direction: column;
-    margin: 7.5vh -22vw;
+    margin-left:-390px;
     width: 400px;
-    height: 400px;
     transition: .3s;
+    
 }
 
 .menu-summoner:hover {
-    margin: 7.5vh -2vw;
+    margin-left: 0px;
     transition: .3s;
 }
 
@@ -81,37 +95,32 @@ body {
     flex-direction: column;
 }
 
-header {
-    width: 100vw;
-    position: fixed;
-    top: 0;
-}
+
 
 .header-menu {
     display: flex;
-    width: 100vw;
+    width: 100%;
+/*    border-collapse: collapse;*/
     background: #2b2b2b;
-    border-collapse: collapse;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.header-menu li {
-    display: inline-block;
-    width: 34vw;
-    padding: 20px 0;
-    text-align: center;
-    font-weight: 100;
-    /*Delete later*/
-    color: ghostwhite;
-    /*background: #2b2b2b;*/
-    border-right: 1px solid white;
-    border-left: 1px solid white;
-    transition: 1s;
+.header-menu li{
+    flex-grow: 1;
+font-size: 50px;
+text-align: center;
+    
 }
 
 .header-menu li a {
-    font-weight: 100;
+padding: 10px;
+    display: block;
+    width:100%;
+/*    font-weight: 100;*/
     text-decoration: none;
     color: ghostwhite;
+    
 }
 
 .header-menu li:hover {
@@ -133,10 +142,6 @@ header {
     width: 100vw;
     background: rgba(0, 0, 0, 0);
     transition: .4s;
-}
-
-#login-btn {
-    float: right;
 }
 
 .news-block{
@@ -180,3 +185,51 @@ header {
     border-bottom: 1px black solid;
     text-align: center;
 }
+
+/*MEDIA LOL*/
+
+@media screen and (max-width:1000px){
+    html{
+        width:100vw;
+    }
+    
+    header {
+    width: 100%;
+}
+    
+}
+
+@media screen and (max-width:550px){
+    .header-menu {
+        flex-direction: column;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
