@@ -2,11 +2,11 @@ body {
     display: flex;
     align-items: center;
     font-family: 'Arial', 'Arial Black', sans-serif;
-    background: url('img/space1.jpg');
+    background: url('img/space1.jpg')no-repeat;
     background-size: cover;
     background-attachment: fixed;   
     animation: doSpace 60s infinite linear;
-    background-size-x: 300vw;
+    background-size: 300%;
 }
 
 .content-holder {
