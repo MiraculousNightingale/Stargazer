@@ -53,7 +53,7 @@ if (isset($_POST['entry-btn'])) {
             <input type="submit" name="entry-btn" value="Sign In" class="submit-btn">
         </form>
         <div class="signup-holder">
-            <span>or, register yourself:</span>
+<!--            <span>or, register yourself:</span>-->
             <a class="go-back-btn" href="signup.php">
                 <div class="go-back-btn-overlay">Sign Up</div>
                 Sign Up
