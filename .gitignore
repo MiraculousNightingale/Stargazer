@@ -7,3 +7,6 @@ uploads/
 _mac
 codestyles
 *.xml
+
+# Idea
+.idea
