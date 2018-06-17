@@ -1,2 +1,5 @@
 src/common/db_config.php
 uploads/
+.idea
+_mac
+codestyles
