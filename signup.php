@@ -9,7 +9,7 @@
 
 <?php
 
-require 'src/common/general.php';
+require_once 'src/common/general.php';
 
 if (isset($_POST['signup'])) {
     if ($_POST['username-field'] != null && $_POST['password-field'] != null) {
