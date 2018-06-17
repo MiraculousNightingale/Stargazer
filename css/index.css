@@ -99,7 +99,7 @@ header {
     text-align: left;
     text-align: center;    
     color: dodgerblue;
-    font-weight: 550;
+    font-weight: 500;
     font-size: 28px;
     padding: 20px 20px;
     border-right: 5px solid dodgerblue;
@@ -181,7 +181,7 @@ padding: 10px;
     height: 345px;
     overflow: hidden;
     box-shadow: 3px 5px 3px 3px rgba(0,0,0,.1);
-    overflow: hiden;
+    overflow: hidden;
 }
 
 .news-contend{
@@ -330,6 +330,19 @@ padding: 10px;
     }
 }
 
+/*
+    Filter block in `Gaze'Em` tab.
+*/
+.filter-block{
+
+}
+
+/*
+    Sort block in `News` tab.
+*/
+.sort-block{
+
+}
 
 
 

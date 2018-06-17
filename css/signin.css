@@ -2,9 +2,8 @@ body {
     display: flex;
     align-items: center;
     font-family: 'Arial', 'Arial Black', sans-serif;
-    background: url('img/space1.jpg')no-repeat;
-    background-size: cover;
-    background-attachment: fixed;   
+    background: url('img/space1.jpg');
+    background-attachment: fixed;
     animation: doSpace 60s infinite linear;
     background-size: 300%;
 }
@@ -15,7 +14,6 @@ body {
 }
 
 @keyframes doSpace{
-    
     0%{background-position: right center;}
     50%{background-position:center;}
     100%{background-position: right center;}
