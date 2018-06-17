@@ -11,6 +11,7 @@ require_once '../common/db_connection.php';
 function buildFilterQuery($table = 'spacecraft')
 {
     $query_line = "SELECT * FROM `$table` WHERE ";
+    $filters=null;
 //    Add only active filters to filters array
     if ($_GET['name'] != 'None' && $_GET['name'] != '')
         $filters['name'] = $_GET['name'];
