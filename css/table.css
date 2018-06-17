@@ -1,0 +1,15 @@
+.table-row{
+    display: flex;
+    justify-content: space-around;
+    border: 1px black dashed;
+    margin: 10px 0;
+}
+.table-cell{
+    display: inline-flex;
+    border-right: 1px black solid;
+    padding: 10px 5px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 150px;
+}

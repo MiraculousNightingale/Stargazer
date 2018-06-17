@@ -1,0 +1,182 @@
+body {
+    display: flex;
+    align-items: center;
+    font-family: 'Arial', 'Arial Black', sans-serif;
+    background: url('img/space1.jpg')no-repeat;
+    background-size: cover;
+    background-attachment: fixed;   
+    animation: doSpace 60s infinite linear;
+    background-size: 300%;
+}
+
+.content-holder {
+    display: inline-block;
+    margin: auto;
+}
+
+@keyframes doSpace{
+    
+    0%{background-position: right center;}
+    50%{background-position:center;}
+    100%{background-position: right center;}
+}
+
+.stargazer-hdr {
+    display: block;
+    margin: auto;
+    font-family: 'Audiowide', cursive;
+    font-size: 160px;
+    font-weight: 900;
+    /*text-shadow: -10px -10px 20px black;*/
+    background: url('img/space_header.jpg');
+/*    background-attachment: fixed;*/
+/*    background-size: contain;*/
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+/*    background-position: top left;*/
+    background-size: 300%;
+animation: doSpace 60s infinite linear;
+}
+
+.signin-holder {
+    display: block;
+    margin: auto;
+    margin-top:50px;
+    padding: 40px 20px;
+    width: 450px;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(255,255,255,.8);
+    box-shadow: 0 0 60px 10px rgba(255,255,255,.5);
+}
+
+.signin-holder input {
+    display: block;
+    margin: 20px auto;
+    font-size: 20px;
+    background: none;
+    border:none;
+    text-align: center;
+    outline: none;
+    border-bottom: 1px solid rgba(0,0,0,.3);
+}
+.signin-holder input:focus{
+    border-bottom: 1px solid rgba(0,0,0,1);
+}
+
+/*.btn-frame {*/
+/*position: relative;*/
+/*display: inline-block;*/
+/*}*/
+
+.signin-holder .submit-btn {
+    display: inline-block;
+    margin: 0;
+    padding: 15px 60px;
+    font-size: 20px;
+    background: #6784ca;
+    color: white;
+    border: none;
+    background: url('img/space1.jpg') no-repeat;
+/*    background-attachment: fixed;*/
+    background-size: 350%;
+    transition: 0.1s;
+    cursor: pointer;
+    background-position: right center;
+}
+
+.signin-holder .submit-btn:hover {
+    box-shadow: 0 0 5px 1px #000000;
+}
+
+/*MEDIA FEECHAA*/
+@media screen and (max-width:1000px){
+    .stargazer-hdr {
+        font-size: 130px;
+    }
+}
+    @media screen and (max-width:800px){
+    .stargazer-hdr {
+        font-size: 110px;
+        }
+    }
+        @media screen and (max-width:650px){
+    .stargazer-hdr {
+        font-size: 90px;
+    }
+}
+
+
+/*END MEDIA FEECHAA*/
+
+
+.signin-holder h1 {
+    padding: 5px 2px;
+    font-family: 'Arial', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+/*    background: url('img/space1.jpg');*/
+    background-attachment: fixed;
+    background-size: contain;
+/*    -webkit-text-fill-color: transparent;*/
+/*    -webkit-background-clip: text;*/
+}
+
+
+
+/* Test stuff */
+.signup-holder {
+    float: right;
+}
+
+span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.go-back-btn {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    padding: 15px 30px;
+    font-size: 15px;
+    text-decoration: none;
+    background: #6784ca;
+    color: white;
+    border: none;
+    background: url('img/space1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.go-back-btn-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    padding: 15px 30px;
+    font-size: 15px;
+    background: #6784ca;
+    color: white;
+    border: none;
+    background: #6784ca;
+    background-attachment: fixed;
+    background-size: 350%;
+    border-radius: 20px;
+    transition: 0.4s;
+    opacity: 0;
+    background-position: right center;
+}
+
+.go-back-btn:hover {
+    box-shadow: 0 0 5px 1px #000000;
+    transition: 0.1s;
+}
+
+.go-back-btn:hover .go-back-btn-overlay {
+    transition: 0.1s;
+}
+
+/* END Test Stuff */

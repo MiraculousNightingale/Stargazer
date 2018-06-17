@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    align-items: center;
+    font-family: 'Arial', 'Arial Black', sans-serif;
+    background: url('img/space3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.info-holder {
+    display: inline-block;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 0 0 60px 10px #ebebeb;
+}
+
+.text-field {
+    display: block;
+    margin: 10px auto;
+    font-size: 20px;
+}
+
+.info-form span {
+    display: block;
+    margin: 5px 0;
+}
+
+.btn-holder {
+    display: block;
+    margin: auto;
+}
+
+.info-form-btn {
+    display: inline-block;
+    margin: auto;
+    margin-top: 10px;
+    padding: 15px 60px;
+    font-size: 20px;
+    line-height: 20px;
+    background: #6784ca;
+    color: white;
+    border: none;
+    background: url('img/space3.jpg');
+    background-attachment: fixed;
+    background-size: contain;
+    transition: 0.4s;
+}
+
+.info-form-btn:hover {
+    box-shadow: 0 0 5px 1px #000000;
+    transition: 0.4s;
+}
+
+h1 {
+    padding: 5px 2px;
+    font-family: 'Arial', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    background: url('img/space3.jpg');
+    background-attachment: fixed;
+    background-size: contain;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+h2 {
+    font-size: 10px;
+}

@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.general-holder {
+    display: inline-block;
+    margin: auto;
+}
+
+.map-holder {
+    display: inline-block;
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    overflow: scroll;
+    /*box-shadow: 0 0 12px 3px blue;*/
+}
+
+/*.map-wrap {*/
+/*display: inline-block;*/
+/*margin: auto;*/
+/*}*/
+
+.starmap {
+    display: inline-block;
+    /*width: 1000px;*/
+    /*height: 1000px;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    color: white;
+    background: black;
+}
