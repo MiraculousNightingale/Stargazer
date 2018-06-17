@@ -3,7 +3,7 @@ body {
     align-items: center;
     font-family: 'Arial', 'Arial Black', sans-serif;
     background: url('img/space1.jpg');
-    background-size: cover;
+/*    background-size: cover;*/
     background-attachment: fixed;   
     animation: doSpace 60s infinite linear;
     background-size: 300%;

@@ -1,6 +1,7 @@
 .feed-form {
     display: block;
     margin: auto;
+    margin-top: 150px;
 }
 
 .feed-form span {
@@ -72,4 +73,26 @@ body{
 h1{
     font-weight: 800;
     font-size: 24px;
+}
+
+@media screen and (max-width:850px){
+    .article-picture{
+        height: 233.3px;
+        width: 250px;
+    }
+    .article-header-field{
+        width:70vw;
+    }
+    .article-text-field{
+        width:70vw;
+    }
+}
+
+@media screen and (max-width:600px){
+    .feed-form {
+    display: block;
+    margin: auto;
+    margin-top: 250px;
+}
+
 }

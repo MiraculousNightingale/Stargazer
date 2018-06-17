@@ -5,7 +5,7 @@ require_once 'common/general.php';
 
 $profile_button = '';
 $state_button = '';
-if ($_SESSION['logged_in'] == true) {
+if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true) {
     $profile_button = getLink('user-profile-btn', 'profile.php', 'User Profile');
     $state_button = getLink('login-btn', 'logout.php', 'Log Out');
 } else {
