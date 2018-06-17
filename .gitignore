@@ -1,1 +1,10 @@
+# Database configuration
 src/common/db_config.php
+
+uploads/
+
+# Some stuff
+.idea
+_mac
+codestyles
+*.xml

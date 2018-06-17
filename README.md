@@ -14,3 +14,6 @@ Miscellaneous website
 
 Pictures are stored in /uploads.
 If such folder doesn't exists - create.
+
+Setup database configuration in `src/common/db_config.php`\
+To do so - use template `[Template]db_config.php`

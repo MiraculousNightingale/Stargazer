@@ -21,4 +21,4 @@ function getLink($id, $href, $text)
 ini_set('session.gc_maxlifetime', 3600);
 if_session_starter();
 
-require 'db_config.php';
+require 'db_connection.php';
