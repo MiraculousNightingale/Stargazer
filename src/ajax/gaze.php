@@ -6,7 +6,7 @@
  * Time: 2:34 PM
  */
 
-require_once '../common/db_config.php';
+require_once '../common/db_connection.php';
 
 /**
  * Generates filers in filter boxes

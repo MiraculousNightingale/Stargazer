@@ -1,6 +1,6 @@
 <?php
 
-require_once '../common/db_config.php';
+require_once '../common/db_connection.php';
 
 /**
  * Build a query depending on filters activated.

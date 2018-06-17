@@ -1,6 +1,6 @@
 <?php
 
-require_once '../common/db_config.php';
+require_once '../common/db_connection.php';
 
 /**
  * Builds a query for news table

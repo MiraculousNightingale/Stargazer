@@ -10,7 +10,7 @@
  * DEPRECATED
  */
 
-//require '../common/db_config.php';
+//require '../common/db_connection.php';
 //
 //if (isset($_GET['tab'])) {
 //
